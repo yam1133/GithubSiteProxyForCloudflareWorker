@@ -1,260 +1,149 @@
-// 域名白名单配置（仅保留需要的原生域名）
-const domain_whitelist = [
-  'github.com',
-  'avatars.githubusercontent.com',
-  'github.githubassets.com',
-  'collector.github.com',
-  'api.github.com',
-  'raw.githubusercontent.com',
-  'gist.githubusercontent.com',
-  'github.io',
-  'assets-cdn.github.com',
-  'cdn.jsdelivr.net',
-  'securitylab.github.com',
-  'www.githubstatus.com',
-  'npmjs.com',
-  'git-lfs.github.com',
-  'githubusercontent.com',
-  'github.global.ssl.fastly.net',
-  'api.npms.io',
-  'github.community',
-  'desktop.github.com',
-  'central.github.com'
-];
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+    <!--<![endif]-->
+    <head>
+        <title>DNS points to prohibited IP | gh.tt0819.cc.cd | Cloudflare</title>
+        <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" /> <script>
+  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode: 1000 },helpful:a,version: 1 };b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+        <script
+            defer
+            src="https://performance.radar.cloudflare.com/beacon.js"
+        ></script>
+    </head>
+    <body>
+        <div id="cf-wrapper">
+            <div
+                class="cf-alert cf-alert-error cf-cookie-error hidden"
+                id="cookie-alert"
+                data-translate="enable_cookies"
+            >
+                Please enable cookies.
+            </div>
+            <div id="cf-error-details" class="p-0">
+                <header
+                    class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased"
+                >
+                    <h1
+                        class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight"
+                    >
+                        <span data-translate="error">Error</span>
+                        <span>1000</span>
+                    </h1>
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >Ray ID: a0cb184088a14f1c &bull;</span
+                    >
+                    <span
+                        class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed"
+                        >2026-06-16 16:12:12 UTC</span
+                    >
+                    <h2
+                        class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light"
+                    >
+                        DNS points to prohibited IP
+                    </h2>
+                </header>
+                
+                
+                <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+                    <div id="what-happened-section" class="w-1/2 md:w-full">
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_happened"
+                        >
+                            What happened?
+                        </h2>
+                        
+                            <p>You've requested a page on a website (gh.tt0819.cc.cd) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. Unfortunately, it is resolving to an IP address that is creating a conflict within Cloudflare's system.</p>
+                        
+                        
+                        <p>
+                            Please see
+                            <a
+                                rel="noopener noreferrer"
+                                href="https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1000/"
+                                target="_blank"
+                                >https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1000/</a
+                            >
+                            for more details.
+                        </p>
+                        
+                    </div>
 
-// 由白名单自动生成映射
-const domain_mappings = Object.fromEntries(
-  domain_whitelist.map(domain => [domain, domain.replace(/\./g, '-') + '-'])
-);
+                    
+                    <div
+                        id="resolution-copy-section"
+                        class="w-1/2 mt-6 text-15 leading-normal"
+                    >
+                        <h2
+                            class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased"
+                            data-translate="what_can_i_do"
+                        >
+                            What can I do?
+                        </h2>
+                        <p><strong>If you are the owner of this website:</strong><br />you should <a href="https://www.cloudflare.com/login?utm_source=error_100x" target="_blank">login to Cloudflare</a> and change the DNS A records for gh.tt0819.cc.cd to resolve to a different IP address.</p>
+                    </div>
+                    
+                </section>
+                
 
-
-// 需要重定向的路径（屏蔽海外后可以不填写）
-//const redirect_paths = ['/', '/login', '/signup', '/copilot', '/search/custom_scopes', '/session'];
-const redirect_paths = [];
-
-// 中国大陆以外的地区重定向到原始GitHub域名
-const enable_geo_redirect = true;
-
-addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request));
-});
-
-async function handleRequest(request) {
-  const url = new URL(request.url);
-  // 统一转小写
-  const current_host = url.host.toLowerCase();
-  const host_header = request.headers.get('Host');
-  const effective_host = (host_header || current_host).toLowerCase();
-  
-  // 检查是否需要重定向到原始GitHub（非中国用户）
-  if (enable_geo_redirect) {
-    const country = request.headers.get('CF-IPCountry') || '';
-    // 调试：打印国家信息
-    // console.log('Country:', country);
-    if (country && country !== 'CN') {
-      // 提取原始GitHub域名
-      const host_prefix = getProxyPrefix(effective_host);
-      if (host_prefix) {
-        let target_host = null;
-        if (host_prefix && host_prefix.endsWith('-gh.')) {
-          const prefix_part = host_prefix.slice(0, -4);
-          for (const original of Object.keys(domain_mappings)) {
-            const normalized_original = original.trim().toLowerCase();
-            if (normalized_original.replace(/\./g, '-') === prefix_part) {
-              target_host = original;
-              break;
-            }
-          }
-        }
-        if (target_host) {
-          const domain_suffix = effective_host.substring(host_prefix.length);
-          const original_url = new URL(request.url);
-          original_url.host = target_host;
-          original_url.protocol = 'https:';
-          return Response.redirect(original_url.href, 302);
-        }
-      }
-    }
-  }
-  
-  // 检查特殊路径，返回正常错误
-  if (redirect_paths.includes(url.pathname)) {
-    return new Response('Not Found', { status: 404 });
-  }
-
-  // 强制使用 HTTPS
-  if (url.protocol === 'http:') {
-    url.protocol = 'https:';
-    return Response.redirect(url.href);
-  }
-
-  // 从有效主机名中提取前缀
-  const host_prefix = getProxyPrefix(effective_host);
-  if (!host_prefix) {
-    return new Response(`Domain not configured for proxy. Host: ${effective_host}, Prefix check failed`, { status: 404 });
-  }
-
-  // 根据前缀找到对应的原始域名
-  let target_host = null;
-  
-  // 解析 *-gh. 模式
-  if (host_prefix && host_prefix.endsWith('-gh.')) {
-    const prefix_part = host_prefix.slice(0, -4); // 移除 -gh.
-    // 尝试找到对应的原始域名
-    for (const original of Object.keys(domain_mappings)) {
-      const normalized_original = original.trim().toLowerCase();
-      if (normalized_original.replace(/\./g, '-') === prefix_part) {
-        target_host = original;
-        break;
-      }
-    }
-  }
-
-  if (!target_host) {
-    return new Response(`Domain not configured for proxy. Host: ${effective_host}, Prefix: ${host_prefix}, Target lookup failed`, { status: 404 });
-  }
-
-  // 直接使用正则表达式处理最常见的嵌套URL问题
-  let pathname = url.pathname;
-  
-  // 修复特定的嵌套URL模式 - 直接移除嵌套URL部分
-  // 匹配 /xxx/xxx/latest-commit/main/https%3A//gh.xxx.xxx/ 或 /xxx/xxx/tree-commit-info/main/https%3A//gh.xxx.xxx/
-  pathname = pathname.replace(/(\/[^\/]+\/[^\/]+\/(?:latest-commit|tree-commit-info)\/[^\/]+)\/https%3A\/\/[^\/]+\/.*/, '$1');
-  
-  // 同样处理非编码版本
-  pathname = pathname.replace(/(\/[^\/]+\/[^\/]+\/(?:latest-commit|tree-commit-info)\/[^\/]+)\/https:\/\/[^\/]+\/.*/, '$1');
-
-  // 构建新的请求URL
-  const new_url = new URL(url);
-  new_url.host = target_host;
-  new_url.pathname = pathname;
-  new_url.protocol = 'https:';
-
-  // 设置新的请求头
-  const new_headers = new Headers(request.headers);
-  new_headers.set('Host', target_host);
-  new_headers.set('Referer', new_url.href);
-  // 强制要求源站返回未压缩的内容，确保我们可以正常修改文本
-  new_headers.delete('accept-encoding');
-  
-  try {
-    // 发起请求
-    const response = await fetch(new_url.href, {
-      method: request.method,
-      headers: new_headers,
-      body: request.method !== 'GET' ? request.body : undefined,
-      redirect: 'manual' // 处理重定向，避免自动跟随导致的问题
-    });
-
-    // 处理重定向
-    if ([301, 302, 303, 307, 308].includes(response.status)) {
-      const location = response.headers.get('location');
-      if (location) {
-        const modified_location = modifyUrl(location, host_prefix, effective_host);
-        const new_res_headers = new Headers(response.headers);
-        new_res_headers.set('location', modified_location);
-        return new Response(null, {
-          status: response.status,
-          headers: new_res_headers
-        });
-      }
-    }
-
-    // 设置新的响应头
-    const new_response_headers = new Headers(response.headers);
-    new_response_headers.set('access-control-allow-origin', '*');
-    new_response_headers.set('access-control-allow-credentials', 'true');
-    new_response_headers.set('cache-control', 'public, max-age=14400');
-    new_response_headers.delete('content-security-policy');
-    new_response_headers.delete('content-security-policy-report-only');
-    new_response_headers.delete('clear-site-data');
-
-    // 只处理 200 OK 且是文本类型的响应内容
-    const content_type = response.headers.get('content-type') || '';
-    const is_text = content_type.includes('text/') || 
-                    content_type.includes('application/json') || 
-                    content_type.includes('application/javascript') || 
-                    content_type.includes('application/xml');
-
-    if (response.status === 200 && is_text) {
-      // 如果要修改内容，必须移除这些头，因为内容会被解压且长度会变化
-      new_response_headers.delete('content-encoding');
-      new_response_headers.delete('content-length');
+                <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-yes"
+            type="button"
+        >
+            Yes
+        </button>
+        <button
+            class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded"
+            id="feedback-button-no"
+            type="button"
+        >
+            No
+        </button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div> <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">a0cb184088a14f1c</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">104.22.20.194</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
       
-      let text = await response.text();
-      text = await modifyText(text, host_prefix, effective_host);
-      
-      return new Response(text, {
-        status: response.status,
-        headers: new_response_headers
-      });
-    }
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+            </div>
+            <!-- /#cf-error-details -->
+        </div>
+        <!-- /#cf-wrapper -->
 
-    // 对于非文本或非 200 响应，直接返回原始流
-    return new Response(response.body, {
-      status: response.status,
-      headers: new_response_headers
-    });
-  } catch (err) {
-    return new Response(`Proxy Error: ${err.message}`, { status: 502 });
-  }
-}
-
-// 获取当前主机名的前缀，用于匹配反向映射
-function getProxyPrefix(host) {
-  // 检查 *-gh. 模式
-  const ghMatch = host.match(/^([a-z0-9-]+-gh\.)/);
-  if (ghMatch) {
-    return ghMatch[1];
-  }
-
-  return null;
-}
-
-// 修改文本中的域名引用
-async function modifyText(text, host_prefix, effective_hostname) {
-  // 使用有效主机名获取域名后缀部分（用于构建完整的代理域名）
-  const domain_suffix = effective_hostname.substring(host_prefix.length);
-  
-  // 替换所有域名引用
-  for (const [original_domain, _] of Object.entries(domain_mappings)) {
-    const escaped_domain = original_domain.replace(/\./g, '\\.');
+         <script>
+    window._cf_translation = {};
     
-    // 统一为 [原生域名]-gh.072103.xyz
-    const current_prefix = original_domain.replace(/\./g, '-') + '-gh.';
-    const full_proxy_domain = `${current_prefix}${domain_suffix}`;
     
-    // 替换完整URLs
-    text = text.replace(
-      new RegExp(`https?://${escaped_domain}(?=/|"|'|\\s|$)`, 'g'),
-      `https://${full_proxy_domain}`
-    );
-    
-    // 替换协议相对URLs
-    text = text.replace(
-      new RegExp(`//${escaped_domain}(?=/|"|'|\\s|$)`, 'g'),
-      `//${full_proxy_domain}`
-    );
-  }
-
-  return text;
-}
-
-// 修改 URL（用于重定向等）
-function modifyUrl(url_str, host_prefix, effective_hostname) {
-  try {
-    const url = new URL(url_str);
-    const domain_suffix = effective_hostname.substring(host_prefix.length);
-    
-    for (const [original_domain, _] of Object.entries(domain_mappings)) {
-      if (url.host === original_domain) {
-        const current_prefix = original_domain.replace(/\./g, '-') + '-gh.';
-        url.host = `${current_prefix}${domain_suffix}`;
-        break;
-      }
-    }
-    return url.href;
-  } catch (e) {
-    return url_str;
-  }
-}
+  </script> 
+        
+    </body>
+</html>
